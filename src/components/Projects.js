@@ -8,13 +8,26 @@ const Projects = ({ isActive }) => {
       name: "Music App",
       description: "Integration test development in Dart/Flutter for Music Player application.",
       technologies: ["Dart", "Flutter", "Integration Testing"],
-      githubLink: "#" // Add actual link
+      githubLink: "https://github.com/AlbertBaby/Music_App"
     },
     {
       name: "HybridTestFramework",
       description: "A versatile testing framework designed to efficiently test mobile apps, web apps, and APIs simultaneously, allowing for comprehensive testing across multiple platforms.",
       technologies: ["Java", "Cucumber", "TestNG", "Selenium", "Appium"],
-      features: ["Cross-platform testing", "API testing", "Mobile and Web testing"]
+      features: ["Cross-platform testing", "API testing", "Mobile and Web testing"],
+      githubLink: "https://github.com/AlbertBaby/Magpie"
+    },
+    {
+      name: "Playwright E2E Testing",
+      description: "End-to-end testing implementation using Playwright framework for web applications, featuring comprehensive test scenarios and automated test execution.",
+      technologies: ["JavaScript", "Playwright", "Node.js", "E2E Testing"],
+      githubLink: "https://github.com/AlbertBaby/Playwright-tests"
+    },
+    {
+      name: "Cypress E2E Testing",
+      description: "Modern web testing framework implementation using Cypress, demonstrating best practices in end-to-end testing with automated test scenarios.",
+      technologies: ["JavaScript", "Cypress", "Node.js", "E2E Testing"],
+      githubLink: "https://github.com/AlbertBaby/cypress_e2e"
     }
   ];
 
