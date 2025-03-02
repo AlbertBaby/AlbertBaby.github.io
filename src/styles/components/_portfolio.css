@@ -1,0 +1,23 @@
+.portfolio-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.portfolio-section {
+  background-color: var(--white);
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-speed) ease,
+              transform var(--transition-speed) ease;
+}
+
+.portfolio-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}

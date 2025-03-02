@@ -1,8 +1,27 @@
 import React, { useState } from 'react';
-import './App.css';
+import './styles/index.css';
+import About from './components/About';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
+
+  const renderActiveComponent = () => {
+    const components = {
+      about: <About isActive={activeSection === 'about'} />,
+      education: <Education isActive={activeSection === 'education'} />,
+      experience: <Experience isActive={activeSection === 'experience'} />,
+      projects: <Projects isActive={activeSection === 'projects'} />,
+      skills: <Skills isActive={activeSection === 'skills'} />,
+      contact: <Contact isActive={activeSection === 'contact'} />
+    };
+    
+    return components[activeSection] || components.about;
+  };
 
   return (
     <div className="App">
@@ -19,65 +38,8 @@ function App() {
         </nav>
       </header>
       
-      <div className="portfolio-container">
-        <section id="about" className={`portfolio-section ${activeSection === 'about' ? 'active' : ''}`}>
-          <h2>About Me</h2>
-          <p>A passionate software developer with expertise in testing applications.</p>
-        </section>
-
-        <section id="education" className={`portfolio-section ${activeSection === 'education' ? 'active' : ''}`}>
-          <h2>Education</h2>
-          <div className="content">
-            <h3>Your University</h3>
-            <p>Degree Details</p>
-            <p>Year of Graduation</p>
-          </div>
-        </section>
-
-        <section id="experience" className={`portfolio-section ${activeSection === 'experience' ? 'active' : ''}`}>
-          <h2>Experience</h2>
-          <div className="content">
-            <h3>Company Name</h3>
-            <p>Position</p>
-            <p>Duration</p>
-            <ul>
-              <li>Key achievement 1</li>
-              <li>Key achievement 2</li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="projects" className={`portfolio-section ${activeSection === 'projects' ? 'active' : ''}`}>
-          <h2>Projects</h2>
-          <div className="content">
-            <div className="project">
-              <h3>Project Name</h3>
-              <p>Project Description</p>
-              <p>Technologies used</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="skills" className={`portfolio-section ${activeSection === 'skills' ? 'active' : ''}`}>
-          <h2>Skills</h2>
-          <div className="content">
-            <ul className="skills-list">
-              <li>React.js</li>
-              <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>Git</li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="contact" className={`portfolio-section ${activeSection === 'contact' ? 'active' : ''}`}>
-          <h2>Contact</h2>
-          <div className="content">
-            <p>Email: albertbaby266192@gmail.com</p>
-            <p>LinkedIn: https://www.linkedin.com/in/albert-baby-079310161/</p>
-            <p>GitHub: https://github.com/AlbertBaby/</p>
-          </div>
-        </section>
+      <div className="content-container">
+        {renderActiveComponent()}
       </div>
     </div>
   );

@@ -1,0 +1,30 @@
+.App-header {
+  background-color: var(--secondary-color);
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-md);
+  color: var(--white);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.nav-menu {
+  margin-top: var(--spacing-lg);
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-menu button {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+}
