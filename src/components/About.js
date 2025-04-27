@@ -17,7 +17,7 @@ const About = ({ isActive }) => {
       <div className="about-content">
         <AnimatedCard className="professional-summary" delay={0.2} direction="left">
           <p className="summary-text">
-            Enthusiastic Quality Assurance professional with 4+ years of experience in crafting, 
+            Enthusiastic Quality Assurance professional with 5+ years of experience in crafting, 
             developing, and executing test plans for web, mobile, and API applications. 
           </p>
           <p className="highlight-text">
@@ -31,7 +31,7 @@ const About = ({ isActive }) => {
           <div className="typing-animation">
             <TypeAnimation
               sequence={[
-                'Test Automation Architecture 🏗️',
+                'Test Automation Framework development 🏗️',
                 2000,
                 'CI/CD Implementation 🔄',
                 2000,
