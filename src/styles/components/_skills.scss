@@ -5,6 +5,20 @@
   padding: 1rem;
 }
 
+.skills {
+  .skill-category {
+    color: var(--primary-color);
+  }
+
+  .skill-description {
+    color: var(--gray-light);
+  }
+
+  .skill-item {
+    color: var(--text-color);
+  }
+}
+
 .skill-category {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;

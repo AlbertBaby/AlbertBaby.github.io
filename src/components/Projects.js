@@ -8,6 +8,7 @@ const Projects = ({ isActive }) => {
       name: "Music App",
       description: "Integration test development in Dart/Flutter for Music Player application.",
       technologies: ["Dart", "Flutter", "Integration Testing"],
+      features: ["Integration testing", "UI testing", "Android native integration testing"],
       githubLink: "https://github.com/AlbertBaby/Music_App"
     },
     {
@@ -21,12 +22,14 @@ const Projects = ({ isActive }) => {
       name: "Playwright E2E Testing",
       description: "End-to-end testing implementation using Playwright framework for web applications, featuring comprehensive test scenarios and automated test execution.",
       technologies: ["JavaScript", "Playwright", "Node.js", "E2E Testing"],
+      features: ["Cross-browser testing", "Headless testing", "Modern web app automated test execution"],
       githubLink: "https://github.com/AlbertBaby/Playwright-tests"
     },
     {
       name: "Cypress E2E Testing",
       description: "Modern web testing framework implementation using Cypress, demonstrating best practices in end-to-end testing with automated test scenarios.",
       technologies: ["JavaScript", "Cypress", "Node.js", "E2E Testing"],
+      features: ["Cross-browser testing", "Headless testing", "Modern web app automated test execution"],
       githubLink: "https://github.com/AlbertBaby/cypress_e2e"
     }
   ];

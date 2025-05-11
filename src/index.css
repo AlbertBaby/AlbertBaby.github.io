@@ -1,10 +1,10 @@
 body {
-  background-color: #1a1a1a;
-  color: #ffffff;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #61dafb;
+  color: var(--white);
 }
 
 p, li, span {
@@ -12,7 +12,7 @@ p, li, span {
 }
 
 a {
-  color: #61dafb;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -32,6 +32,20 @@ pre {
   background-color: #2d2d2d;
   padding: 1rem;
   border-radius: 8px;
+}
+
+button {
+  background-color: transparent;
+  color: var(--gray-light);
+}
+
+button:hover {
+  color: var(--primary-color);
+}
+
+.active {
+  background-color: var(--gray-dark);
+  color: var(--primary-color);
 }
 
 .portfolio-section {
