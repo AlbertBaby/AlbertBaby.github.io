@@ -3,43 +3,35 @@ import '../styles/components/_skills.scss';
 
 const Skills = ({ isActive }) => {
   const skillCategories = [
-    {
-      category: "Automation Tools",
-      skills: ["Selenium 4.x", "Appium", "Cypress", "Playwright"]
-    },
-    {
-      category: "Mobile Testing",
-      skills: ["ADB", "Xcode", "Charles Proxy"]
-    },
-    {
-      category: "API Testing",
-      skills: ["Postman", "Rest Assured"]
-    },
-    {
-      category: "Testing Frameworks",
-      skills: ["Cucumber", "Pytest", "JUnit", "TestNG"]
-    },
-    {
-      category: "Version Control & Build",
-      skills: ["Git", "Maven"]
-    },
-    {
-      category: "Test Management",
-      skills: ["JIRA", "TestRail", "Confluence"]
-    },
-    {
-      category: "Operating Systems",
-      skills: ["Linux", "Bash Scripting"]
-    },
-    {
-      category: "Programming Languages",
-      skills: ["Java", "Python", "JavaScript"]
-    },
-    {
-      category: "CI/CD",
-      skills: ["Jenkins", "Github Actions"]
-    }
-  ];
+  {
+    "category": "Programming Languages",
+    "skills": ["TypeScript", "JavaScript", "Python", "Java"]
+  },
+  {
+    "category": "Automation & Frameworks",
+    "skills": ["Playwright", "Appium", "PyTest", "RestAssured", "Selenium", "TestNG"]
+  },
+  {
+    "category": "API & Mobile Engineering",
+    "skills": ["Postman", "Swagger", "Charles Proxy", "ADB", "Xcode"]
+  },
+  {
+    "category": "DevOps, Cloud & Infrastructure",
+    "skills": ["Jenkins", "GitHub Actions", "Docker", "AWS (S3, SQS, SNS)", "Git", "Maven", "Gradle"]
+  },
+  {
+    "category": "Databases & OS",
+    "skills": ["PostgreSQL", "MySQL", "Linux", "Bash"]
+  },
+  {
+    "category": "Specialized Domains",
+    "skills": ["AI/LLM Evaluation", "Hardware-in-the-Loop (HiL)", "Performance Testing (JMeter)"]
+  },
+  {
+    "category": "Test Management & Governance",
+    "skills": ["Jira", "TestRail", "Confluence"]
+  }
+];
 
   return (
     <section id="skills" className={`portfolio-section ${isActive ? 'active' : ''}`}>
